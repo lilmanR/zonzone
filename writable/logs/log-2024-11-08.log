@@ -1,0 +1,2020 @@
+CRITICAL - 2024-11-08 09:22:54 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:22:55 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:23:37 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:23:38 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:24:36 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:24:37 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:24:38 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:24:39 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:25:07 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:25:37 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:01 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:03 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:03 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:20 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:21 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:22 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:31 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:32 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:33 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:26:49 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:27:19 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:27:49 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:28:19 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:28:49 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:29:50 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:30:51 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:31:52 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:32:53 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:33:54 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:34:55 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:35:19 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:40:40 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(93): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:40:42 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(93): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:40:44 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(93): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:40:44 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(93): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:40:59 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:41:08 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:41:09 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:41:10 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:41:10 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:41:41 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::getUnreadNotifications
+[Method: GET, Route: post/getNotifications]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(56): CodeIgniter\Model->__call('getUnreadNotifications', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->getNotifications()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:50:46 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:50:48 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:51:25 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:51:25 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:57:59 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(92): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:58:00 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(92): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:58:01 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(92): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:58:01 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(92): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:58:01 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(92): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:58:02 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(92): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:58:02 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(92): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:59:14 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 09:59:14 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 10:06:28 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-08 14:37:37 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posts', 3306, '', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\zfeedd\app\Controllers\Auth.php(22): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\Auth->processLogin()
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\zfeedd\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\zfeedd\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\zfeedd\app\Controllers\Auth.php(22): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\Auth->processLogin()
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-08 14:37:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: auth/processLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(22): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->processLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 14:40:19 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 14:40:20 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 14:40:58 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 14:40:59 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:06:01 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:06:02 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:06:45 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:06:46 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:08:57 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:08:58 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:13:18 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:13:21 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:13:22 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:13:25 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:13:25 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:13:26 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:16:19 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:16:21 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:16:22 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:16:22 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:18:30 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:18:33 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:19:26 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:19:27 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:19:34 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:19:35 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:19:49 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:19:56 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:19:56 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:21:32 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:27:53 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(67): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:28:24 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(67): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:28:24 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(67): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:28:32 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(67): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:28:33 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(67): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:28:43 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(67): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:28:43 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(67): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:32:57 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:32:58 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:32:58 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:32:59 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:32:59 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:32:59 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:32:59 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:32:59 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:33:00 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:33:00 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:33:00 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:33:00 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:33:00 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:33:01 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:34:22 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:34:36 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 15:34:38 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:15:38 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:15:38 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:15:40 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:15:40 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:15:42 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:15:42 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:20:06 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:20:09 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:20:12 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:24:11 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:24:14 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:29:13 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:39:29 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:39:31 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 16:39:32 --> BadMethodCallException: Call to undefined method App\Models\NotificationModel::markAsRead
+[Method: POST, Route: post/markNotificationsAsRead]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(65): CodeIgniter\Model->__call('markAsRead', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->markNotificationsAsRead()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 18:59:09 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 18:59:10 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 18:59:12 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 18:59:17 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:00:01 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:00:01 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:00:01 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:00:02 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:00:37 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:02:02 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:12:49 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:19:09 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:21:05 --> BadMethodCallException: Call to undefined method App\Models\CommentModel::getComment
+[Method: POST, Route: post/addReply]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(108): CodeIgniter\Model->__call('getComment', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:52:55 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:52:55 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:52:57 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:52:57 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:56:54 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:56:54 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:56:56 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 19:56:56 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:25:22 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(100): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:25:24 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(100): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:25:47 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(100): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:30:39 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:30:39 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:32:23 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:32:23 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:32:39 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:32:39 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:34:21 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(79): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 20:38:07 --> ErrorException: Undefined variable $notification
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 83.
+ 1 APPPATH\Views\dashboard.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notification', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:10:33 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:10:36 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:07 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:07 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:07 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:07 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:07 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:08 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:58 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:58 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:59 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:12:59 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:14:56 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 80.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:14:56 --> [Caused by] ErrorException: Undefined variable $notifications
+in APPPATH\Views\dashboard.php on line 80.
+ 1 APPPATH\Views\dashboard.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $notifications', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 80)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:15:40 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:15:56 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-08 21:15:57 --> BadMethodCallException: Call to undefined method App\Models\PostModel::getPostOwner
+[Method: POST, Route: post/addComment]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\PostController.php(94): CodeIgniter\Model->__call('getPostOwner', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addComment()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')

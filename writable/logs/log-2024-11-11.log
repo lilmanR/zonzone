@@ -1,0 +1,204 @@
+ERROR - 2024-11-11 16:18:29 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posts', 3306, '', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#3 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#5 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-11 16:18:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC', [], false)
+ 3 APPPATH\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-11 17:00:20 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-11 17:00:20 --> CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC', [], false)
+ 2 APPPATH\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-11 17:00:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC', [], false)
+ 4 APPPATH\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-11 17:00:20 --> [Caused by] mysqli_sql_exception: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC', [], false)
+ 5 APPPATH\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-11 17:23:35 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Filters\AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 778.
+ 1 SYSTEMPATH\Filters\Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('App\\Filters\\AuthFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-11 17:23:52 --> CodeIgniter\Filters\Exceptions\FilterException: "App\Filters\AuthFilter" filter must have a matching alias defined.
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 778.
+ 1 SYSTEMPATH\Filters\Filters.php(778): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('App\\Filters\\AuthFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(406): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(181): CodeIgniter\Filters\Filters->initialize('')
+ 4 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-11 21:14:41 --> ErrorException: Undefined array key "nama_lengkap"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 103.
+ 1 APPPATH\Views\dashboard.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 103)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(30): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-11 22:20:22 --> ErrorException: Undefined array key "jurusan"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 152.
+ 1 APPPATH\Views\dashboard.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jurusan"', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 152)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(30): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')

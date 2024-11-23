@@ -1,0 +1,253 @@
+ERROR - 2024-11-13 16:43:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posts', 3306, '', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#3 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+#5 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-13 16:43:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`, `users`.`fprofile`, `users`.`jurusan`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC', [], false)
+ 3 APPPATH\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-13 16:43:34 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posts', 3306, '', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#3 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+#5 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-13 16:43:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`, `users`.`fprofile`, `users`.`jurusan`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC', [], false)
+ 3 APPPATH\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-13 16:44:00 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posts', 3306, '', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#3 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+#5 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-13 16:44:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`, `users`.`fprofile`, `users`.`jurusan`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC', [], false)
+ 3 APPPATH\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-13 16:44:06 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'posts', 3306, '', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#3 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+#5 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-11-13 16:44:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`, `users`.`fprofile`, `users`.`jurusan`, COUNT(comments.post_id) as jumlah_komentar
+FROM `posts`
+JOIN `users` ON `users`.`username` = `posts`.`user_name`
+LEFT JOIN `comments` ON `comments`.`post_id` = `posts`.`id`
+GROUP BY `posts`.`id`
+ORDER BY `post_date` DESC', [], false)
+ 3 APPPATH\Models\PostModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\PostController.php(28): App\Models\PostModel->getPosts()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-13 18:15:30 --> ErrorException: Undefined variable $user
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 217.
+ 1 APPPATH\Views\dashboard.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 217)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(30): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-13 18:18:53 --> ErrorException: Undefined variable $user
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 217.
+ 1 APPPATH\Views\dashboard.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 217)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(30): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-13 18:18:53 --> ErrorException: Undefined variable $user
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 217.
+ 1 APPPATH\Views\dashboard.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 217)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(30): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')

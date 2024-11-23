@@ -1,0 +1,1159 @@
+ERROR - 2024-11-06 14:37:37 --> mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause' in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-06 14:37:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:37 --> [Caused by] mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 14:37:38 --> mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause' in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-06 14:37:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:38 --> [Caused by] mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 14:37:54 --> mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause' in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-06 14:37:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:54 --> [Caused by] mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 14:37:55 --> mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause' in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-06 14:37:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:55 --> [Caused by] mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 14:37:56 --> mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause' in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-06 14:37:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:37:56 --> [Caused by] mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 14:39:47 --> mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause' in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#6 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#7 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-06 14:39:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 2 APPPATH\Models\PostModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:39:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 4 APPPATH\Models\PostModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:39:47 --> [Caused by] mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 5 APPPATH\Models\PostModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 14:49:01 --> mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause' in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-06 14:49:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:49:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:49:01 --> [Caused by] mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 14:49:02 --> mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause' in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-06 14:49:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:49:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:49:02 --> [Caused by] mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:49:35 --> ErrorException: Undefined array key "nama_lengkap"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 28.
+ 1 APPPATH\Views\dashboard.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\zfeedd\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\PostController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 14:54:42 --> mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause' in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`....', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\zfeedd\app\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+#8 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->index()
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-06 14:54:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:54:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 14:54:42 --> [Caused by] mysqli_sql_exception: Unknown column 'posts.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `posts`.*, `users`.`nama_lengkap`
+FROM `posts`
+JOIN `users` ON `users`.`id` = `posts`.`user_id`
+ORDER BY `post_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PostModel.php(19): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PostController.php(27): App\Models\PostModel->getPosts()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/uploads/1730912656_83773dd4bcf718a2e623.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/uploads/1730912656_83773dd4bcf718a2e623.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/uploads/1730912656_83773dd4bcf718a2e623.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/uploads/1730912023_75e1077c48392cd90d52.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/uploads/1730912023_75e1077c48392cd90d52.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/uploads/1730912023_75e1077c48392cd90d52.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/RSLTNv7/f1573b0a1254.jpg]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/RSLTNv7/f1573b0a1254.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/RSLTNv7/f1573b0a1254.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/SnX37Rk/db6d1a664b84.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/SnX37Rk/db6d1a664b84.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/SnX37Rk/db6d1a664b84.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/TRf8Ndz/714ecccf9c25.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/TRf8Ndz/714ecccf9c25.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/TRf8Ndz/714ecccf9c25.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/NrmHN71/501cb4dd9612.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/NrmHN71/501cb4dd9612.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/NrmHN71/501cb4dd9612.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/uploads/1730912656_83773dd4bcf718a2e623.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/uploads/1730912656_83773dd4bcf718a2e623.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/uploads/1730912656_83773dd4bcf718a2e623.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/uploads/1730912023_75e1077c48392cd90d52.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/uploads/1730912023_75e1077c48392cd90d52.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/uploads/1730912023_75e1077c48392cd90d52.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/RSLTNv7/f1573b0a1254.jpg]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/RSLTNv7/f1573b0a1254.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/RSLTNv7/f1573b0a1254.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/SnX37Rk/db6d1a664b84.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/SnX37Rk/db6d1a664b84.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/SnX37Rk/db6d1a664b84.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/TRf8Ndz/714ecccf9c25.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/TRf8Ndz/714ecccf9c25.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/TRf8Ndz/714ecccf9c25.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 17:10:21 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "C:\xampp\htdocs\zfeedd\writable\uploads"
+[Method: GET, Route: C:%5Cxampp%5Chtdocs%5Czfeedd%5Cwritable%5Cuploads/NrmHN71/501cb4dd9612.png]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/NrmHN71/501cb4dd9612.png')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('C:\\xampp\\htdocs\\zfeedd\\writable\\uploads/NrmHN71/501cb4dd9612.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 23:51:11 --> mysqli_sql_exception: Column 'comment_text' cannot be null in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\zfeedd\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\zfeedd\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(91): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#11 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2024-11-06 23:51:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'comment_text' cannot be null
+[Method: POST, Route: post/addReply]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (:post_id:, :user_name:, :comment_text:, :parent_comment_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PostController.php(91): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 23:51:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'comment_text' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (:post_id:, :user_name:, :comment_text:, :parent_comment_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PostController.php(91): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 23:51:11 --> [Caused by] mysqli_sql_exception: Column 'comment_text' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (:post_id:, :user_name:, :comment_text:, :parent_comment_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PostController.php(91): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 23:51:14 --> mysqli_sql_exception: Column 'comment_text' cannot be null in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\zfeedd\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\zfeedd\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(91): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#11 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2024-11-06 23:51:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'comment_text' cannot be null
+[Method: POST, Route: post/addReply]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (:post_id:, :user_name:, :comment_text:, :parent_comment_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PostController.php(91): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 23:51:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'comment_text' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (:post_id:, :user_name:, :comment_text:, :parent_comment_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PostController.php(91): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 23:51:14 --> [Caused by] mysqli_sql_exception: Column 'comment_text' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (:post_id:, :user_name:, :comment_text:, :parent_comment_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PostController.php(91): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+ERROR - 2024-11-06 23:51:19 --> mysqli_sql_exception: Column 'comment_text' cannot be null in C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\zfeedd\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\zfeedd\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\zfeedd\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\zfeedd\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\zfeedd\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\zfeedd\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\zfeedd\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\zfeedd\app\Controllers\PostController.php(91): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+#10 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#11 C:\xampp\htdocs\zfeedd\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\zfeedd\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\zfeedd\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\zfeedd\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\zfeedd\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2024-11-06 23:51:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'comment_text' cannot be null
+[Method: POST, Route: post/addReply]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (:post_id:, :user_name:, :comment_text:, :parent_comment_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PostController.php(91): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 23:51:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'comment_text' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (:post_id:, :user_name:, :comment_text:, :parent_comment_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PostController.php(91): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
+CRITICAL - 2024-11-06 23:51:19 --> [Caused by] mysqli_sql_exception: Column 'comment_text' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (\'46\', \'hilman\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `comments` (`post_id`, `user_name`, `comment_text`, `parent_comment_id`) VALUES (:post_id:, :user_name:, :comment_text:, :parent_comment_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PostController.php(91): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PostController->addReply()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\zfeedd\\public\\index.php')
