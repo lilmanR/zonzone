@@ -12,34 +12,40 @@ class Auth extends BaseController
     }
 
     public function processLogin()
-    {
-        $session = session();
-        $model = new UserModel();
-        
-        $username = $this->request->getPost('username');
-        $password = $this->request->getPost('password');
+{
+    $session = session();
+    $model = new UserModel();
+    
+    $username = $this->request->getPost('username');
+    $password = $this->request->getPost('password');
 
-        $user = $model->where('username', $username)->first();
+    $user = $model->where('username', $username)->first();
 
-        if ($user) {
-            if (password_verify($password, $user['password'])) {
-                $sessionData = [
-                    'id'       => $user['id'],
-                    'username' => $user['username'],
-                    'logged_in' => true,
-                ];
-                $session->set($sessionData);
+    if ($user) {
+        if (password_verify($password, $user['password'])) {
+            $sessionData = [
+                'id'       => $user['id'],
+                'username' => $user['username'],
+                'logged_in' => true,
+            ];
+            $session->set($sessionData);
 
-                return redirect()->to('/dashboard');
-            } else {
-                $session->setFlashdata('msg', 'Password salah');
-                return redirect()->to('/login');
+            // Periksa apakah username adalah 'admin'
+            if ($username === 'hilman') {
+                return redirect()->to('/admin'); // Arahkan ke halaman admin
             }
+
+            return redirect()->to('/dashboard'); // Arahkan ke halaman dashboard untuk user biasa
         } else {
-            $session->setFlashdata('msg', 'Username tidak ditemukan');
+            $session->setFlashdata('msg', 'Password salah');
             return redirect()->to('/login');
         }
+    } else {
+        $session->setFlashdata('msg', 'Username tidak ditemukan');
+        return redirect()->to('/login');
     }
+}
+
     public function register()
     {
         return view('auth/register');

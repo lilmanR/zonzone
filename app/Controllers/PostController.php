@@ -27,6 +27,7 @@ class PostController extends Controller
         $userName = $this->session->get('username');
         $data['posts'] = $this->postModel->getPosts();
         $data['notifications'] = $this->notificationModel->getUnreadNotifications($userName);
+        $data['trendingPosts'] = $this->postModel->getTrendingPosts();
         return view('dashboard', $data);
     }
 
@@ -162,6 +163,63 @@ public function addReply()
     }
 
     return $this->response->setJSON(['error' => 'Notification or Post not found'], 404);
+}
+public function checkNewComments($postId)
+{
+    // Ambil komentar pada post tertentu
+    $comments = $this->commentModel->getCommentsByPostId($postId);
+
+    // Sertakan balasan untuk setiap komentar
+    foreach ($comments as &$comment) {
+        $comment['replies'] = $this->commentModel->getRepliesByCommentId($comment['id']);
+    }
+
+    return $this->response->setJSON($comments);
+}
+
+public function checkNotifications()
+{
+    $userName = $this->session->get('username');
+
+    // Ambil notifikasi yang belum dibaca
+    $notifications = $this->notificationModel->getUnreadNotifications($userName);
+
+    if ($notifications) {
+        // Render notifikasi ke dalam HTML (sesuai format frontend Anda)
+        $html = '';
+        foreach ($notifications as $notif) {
+            $html .= "
+                <a class='dropdown-item' href='#' onclick='showNotificationDetails({$notif['id']}, {$notif['post_id']})'>
+                    <strong>{$notif['comment_user']}</strong> mengomentari postingan Anda
+                </a>";
+        }
+        return $this->response->setJSON(['new_notifications' => true, 'html' => $html]);
+    }
+
+    return $this->response->setJSON(['new_notifications' => false]);
+}
+public function trendingPosts()
+{
+    $data['trendingPosts'] = $this->postModel->getTrendingPosts();
+    return view('trending_today', $data); // Sesuaikan nama view
+}
+public function details($id)
+{
+    $post = $this->postModel->getPostById($id); // Ganti dengan metode yang sesuai untuk mendapatkan data postingan
+    if ($post) {
+        return $this->response->setJSON($post);
+    } else {
+        return $this->response->setJSON(['error' => 'Postingan tidak ditemukan.']);
+    }
+}
+
+public function showTrendingPosts()
+{
+    // Ambil data postingan trending
+    $data['posts'] = $this->postModel->getTrendingPostsWithDetails();
+    $data['title'] = 'Trending Today'; // Judul Halaman
+
+    return view('post_list', $data); // Pastikan Anda memiliki view yang sesuai
 }
 
 }

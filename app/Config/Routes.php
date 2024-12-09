@@ -25,3 +25,21 @@ $routes->post('/post/markNotificationsAsRead', 'PostController::markNotification
 
 $routes->get('/user/profile', 'UserController::profile');
 $routes->post('/user/updateProfilePicture', 'UserController::updateProfilePicture');
+
+// Rute untuk polling komentar baru
+$routes->get('/post/checkNewComments/(:num)', 'PostController::checkNewComments/$1');
+
+// Rute untuk polling notifikasi baru
+$routes->get('/post/checkNotifications', 'PostController::checkNotifications');
+
+$routes->get('/post/getTrendingPosts', 'PostController::getTrendingPosts');
+
+$routes->get('post/details/(:num)', 'PostController::details/$1');
+
+$routes->get('/post/getNewNotificationCount', 'PostController::getNewNotificationCount');
+
+$routes->get('/admin', 'Admin::index',['filter' => 'auth']); // Controller dan metode untuk halaman admin
+
+$routes->get('/admin/delete-user/(:num)', 'Admin::deleteUser/$1');
+$routes->get('/admin/delete-post/(:num)', 'Admin::deletePost/$1');
+

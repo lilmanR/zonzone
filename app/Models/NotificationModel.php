@@ -30,4 +30,5 @@ class NotificationModel extends Model
                     ->set(['seen' => 1])
                     ->update();
     }
+    
 }

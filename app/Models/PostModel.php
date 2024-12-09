@@ -21,4 +21,26 @@ class PostModel extends Model
         ->get()
         ->getResultArray();
 }
+public function getTrendingPosts()
+{
+    return $this->db->table('posts')
+                    ->select('posts.id, posts.post_text, posts.image_path, COUNT(comments.id) as jumlah_komentar')
+                    ->join('comments', 'comments.post_id = posts.id', 'left')
+                    ->groupBy('posts.id')
+                    ->orderBy('jumlah_komentar', 'DESC')
+                    ->limit(3) // Ambil 5 postingan teratas
+                    ->get()
+                    ->getResultArray();
+}
+public function getPostById($id)
+{
+    return $this->db->table('posts')
+        ->select('posts.*, users.nama_lengkap, users.jurusan, users.fprofile')
+        ->join('users', 'posts.user_id = users.id')
+        ->where('posts.id', $id)
+        ->get()
+        ->getRowArray();
+}
+
+
 }
