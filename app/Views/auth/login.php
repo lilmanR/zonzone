@@ -93,7 +93,7 @@
                                     </div>
                                     <!-- Flash Message -->
                                     <?php if(session()->getFlashdata('msg')): ?>
-                                        <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+                                        <div class="alert alert-success"><?= session()->getFlashdata('msg') ?></div>
                                     <?php endif; ?>
                                     <!-- Login Form -->
                                     <form action="<?= site_url('auth/processLogin') ?>" method="post" class="user">
